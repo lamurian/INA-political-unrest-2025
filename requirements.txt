@@ -1,0 +1,8 @@
+google==3.0.0
+google-genai==1.13.0
+pandas==2.2.3
+python-dotenv==1.0.1
+fastparquet==2024.11.0
+ratelimit==2.2.1
+more_itertools==10.7.0
+tenacity==9.1.2

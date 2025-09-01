@@ -26,6 +26,8 @@ class Summary(BaseModel):
     highlight: str
     summary: str
     is_unrest: bool
+    is_ina: bool
+    is_violent: bool
 
 
 ## FUNCTION
@@ -152,6 +154,8 @@ You are an expert news analyzer. You will receive a batch of 45 news articles. F
 4. Infer the highlighted theme of the article (3–5 words, broader/general category).  
 5. Provide a concise summary (approx. 300 characters) that reflects the keywords, topic, and theme.  
 6. Indicate the presence of political unrest: answer strictly with `True` or `False`. 
+7. Indicate the relevance to the national situation: answer strictly with `True` or `False`.
+7. Indicate the presence of violence: answer strictly with `True` or `False`.
 
 Process each article independently but maintain a consistent style across the batch.
 """
@@ -172,3 +176,21 @@ for i, chunk in enumerate(chunked(news, 45)):
 
     results = results + response
     print(f"Finished!")
+
+# Convert the results into a data frame then merge to the original data
+tbl_summary = pd.DataFrame([r.dict() for r in results]).set_index("rownum")
+
+tbl_clean = tbl.drop(columns=["title", "keyword", "match_pattern"]) \
+               .merge(
+                    tbl_summary,
+                    left_index = True,
+                    right_index = True,
+                    how = "inner"
+               )
+
+tbl_clean["pubDateTime"] = pd.to_datetime(tbl_clean["pubDateTime"], errors = "coerce")
+tbl_clean["keyword"] = tbl_clean["keyword"].apply(lambda x: "; ".join(x))
+tbl_clean = tbl_clean.sort_values(by = "pubDateTime", ascending = True)
+
+# Save the dataset into file
+tbl_clean.to_csv("data/processed/preanalysis.csv", index = False)

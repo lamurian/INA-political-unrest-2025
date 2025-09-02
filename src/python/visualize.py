@@ -1,14 +1,13 @@
 ## MODULES
 
+import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
 from scipy.interpolate import make_interp_spline
 from matplotlib.dates import DateFormatter
+from src.python.parse import read_data
 
-
-## FUNCTION
 
 # Visualize the trend
 def viz_trend(sub_tbl):

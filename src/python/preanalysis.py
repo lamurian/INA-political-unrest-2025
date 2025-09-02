@@ -2,11 +2,6 @@
 
 import os
 import httpx
-import pandas as pd
-from src.python.parse import read_news
-from pydantic import BaseModel
-from sklearn.feature_extraction.text import TfidfVectorizer
-from collections import Counter
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -17,21 +12,6 @@ from tenacity import (
     retry, wait_exponential, stop_never, retry_if_exception_type
 )
 
-
-## RESPONSE MODEL
-
-class Summary(BaseModel):
-    rownum: int
-    keyword: list[str]
-    topic: str
-    highlight: str
-    summary: str
-    is_unrest: bool
-    is_ina: bool
-    is_violent: bool
-
-
-## FUNCTION
 
 # Call Google Gemini to generate content
 @retry(
@@ -111,7 +91,7 @@ def generate(model, content, schema):
     return result
 
 # Extract top keyword based on text frequency metrics
-def extract_keywords(keyword_series, top_n = 1000):
+def extract_keywords(keyword_series, top_n = 100):
     # Preprocess keywords
     keyword_list = keyword_series.fillna("").apply(
         lambda x: [k.strip().upper().replace(" ", "_") for k in x.split("; ") if k.strip()]
@@ -174,7 +154,7 @@ def normalize_keywords(tbl):
     return norm_keywords
 
 # Parse the news feed then assign appropriate keywords and topics
-def clean_news(tbl):
+def clean_news(tbl, norm_keywords):
     news = [
         {
             "rownum": row[0],

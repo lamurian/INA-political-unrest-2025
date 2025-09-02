@@ -19,3 +19,6 @@
 !*yml
 !*.tex
 !*.txt
+!*.json
+!*.pdf
+!*.png

@@ -116,6 +116,7 @@ def viz_trend(sub_tbl):
     # Format x-axis
     plt.gca().xaxis.set_major_formatter(DateFormatter('%d %b'))
     plt.xticks(rotation=0, fontsize=10)
+    plt.yticks(fontsize=10)
 
     # Legend top-right
     plt.legend(title="", loc="upper right", frameon=False, fontsize=11)

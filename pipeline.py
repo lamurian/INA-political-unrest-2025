@@ -11,7 +11,8 @@ from datetime import datetime
 from scipy.interpolate import make_interp_spline
 from matplotlib.dates import DateFormatter
 from src.python.parse import read_data
-from pydantic import BaseModel
+from pydantic import (BaseModel, RootModel)
+from typing import List
 from sklearn.feature_extraction.text import TfidfVectorizer
 from collections import Counter
 from dotenv import load_dotenv
@@ -24,7 +25,7 @@ from tenacity import (
     retry, wait_exponential, stop_never, retry_if_exception_type
 )
 from src.python.parse import (
-    read_data, write_data, load_or_create
+    read_data, write_data, load_or_create, serialize
 )
 from src.python.preanalysis import (
     generate, normalize_keywords, clean_news
@@ -36,7 +37,7 @@ from src.python.daily_highlights import (
     iter_by_day, assign_highlight, assign_theme
 )
 from src.python.thematic_analysis import (
-    refine_theme
+    refine_theme, assign_topic, tabulate_topic
 )
 
 
@@ -44,7 +45,7 @@ from src.python.thematic_analysis import (
 
 class Summary(BaseModel):
     rownum: int
-    keyword: list[str]
+    keyword: List[str]
     topic: str
     highlight: str
     summary: str
@@ -58,6 +59,20 @@ class Theme(BaseModel):
     thm: str
     rx_kw: str
     rx_thm: str
+
+class Topic(BaseModel):
+    topic: str
+    linked_themes: List[str]
+    rationale: str
+    interpret: str
+
+class DayThemes(BaseModel):
+    date: str
+    thm: List[str]
+    topics: List[Topic]
+
+class TopicReport(RootModel):
+    root: List[DayThemes]
 
 
 ## PROCEDURE
@@ -85,10 +100,12 @@ tbl_clean = load_or_create(
 )
 
 # Subset the table
-sub_tbl = tbl_clean.query("is_ina")
+plt_tbl = tbl_clean.query("is_ina")
+sub_tbl = tbl_clean.query("is_ina and is_unrest")
+
 
 # Visualize the trend of unrest and violence reported in news
-plt_trend = viz_trend(sub_tbl)
+plt_trend = viz_trend(plt_tbl)
 plt_trend.savefig("docs/fig/plt-trend-unrest.pdf", format="pdf", bbox_inches="tight")
 
 # Generate daily news highlights
@@ -119,10 +136,25 @@ refined_theme = load_or_create(
 tbl_theme = pd.DataFrame(
     [
         {**theme, "date": date}
-        for date, themes in refined_theme.items()
+        for date, themes in serialize(refined_theme).items()
         for theme in themes
     ]
 )
 
 tbl_theme = tbl_theme.set_index("rownum")
-write_data(tbl_theme, "data/processed/tbl_theme.csv")
+
+# Determine the daily topic based on given themes
+daily_topic = load_or_create(
+    FUN = assign_topic,
+    path = "data/processed/daily_topic.json",
+    params = {
+        "assign_topic": {
+            "tbl": tbl_theme,
+            "model": "gemini-2.5-flash",
+            "schema": TopicReport
+        }
+    }
+)
+
+# Save the topic as a dataframe
+tbl_topic = tabulate_topic(daily_topic)

@@ -3,11 +3,13 @@
 import os
 import httpx
 from dotenv import load_dotenv
+from collections import Counter
 from google import genai
 from google.genai import types
 from google.genai.errors import APIError
 from ratelimit import limits, sleep_and_retry
 from more_itertools import chunked
+from sklearn.feature_extraction.text import TfidfVectorizer
 from tenacity import (
     retry, wait_exponential, stop_never, retry_if_exception_type
 )

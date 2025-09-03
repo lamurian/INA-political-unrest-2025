@@ -3,7 +3,8 @@
 import os
 import json
 import pandas as pd
-from pydantic import BaseModel
+from pydantic import (BaseModel, RootModel)
+from typing import List
 
 
 # Serialize any object

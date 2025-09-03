@@ -1,0 +1,349 @@
+[
+  {
+    "date": "2025-08-24",
+    "thm": [
+      "ANTI-CORRUPTION GOVERNANCE",
+      "INTERNATIONAL HUMANITARIAN ADVOCACY"
+    ],
+    "topics": [
+      {
+        "topic": "ANTI-CORRUPTION GOVERNANCE",
+        "linked_themes": [
+          "ANTI-CORRUPTION GOVERNANCE"
+        ],
+        "rationale": "This theme stands alone, focusing on internal state integrity and good governance.",
+        "interpret": "Effective anti-corruption measures are crucial for maintaining public trust and the legitimacy of government institutions."
+      },
+      {
+        "topic": "INTERNATIONAL HUMANITARIAN ADVOCACY",
+        "linked_themes": [
+          "INTERNATIONAL HUMANITARIAN ADVOCACY"
+        ],
+        "rationale": "This theme stands alone, highlighting global efforts to promote humanitarian causes.",
+        "interpret": "International advocacy plays a vital role in addressing global crises and promoting human welfare across borders."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-25",
+    "thm": [
+      "ANTI-CORRUPTION EFFORTS",
+      "PUBLIC PROTESTS & DISSENT",
+      "PROTEST MANAGEMENT & SECURITY",
+      "INTER-AGENCY INCIDENTS",
+      "PROTEST VIOLENCE & DESTRUCTION",
+      "PROTEST IMPACT & DISRUPTION"
+    ],
+    "topics": [
+      {
+        "topic": "PUBLIC UNREST & CONSEQUENCES",
+        "linked_themes": [
+          "PUBLIC PROTESTS & DISSENT",
+          "PROTEST VIOLENCE & DESTRUCTION",
+          "PROTEST IMPACT & DISRUPTION"
+        ],
+        "rationale": "These themes collectively describe the occurrence, nature, and societal effects of public demonstrations.",
+        "interpret": "Widespread public dissent, often escalating to violence, significantly disrupts societal order and daily life, demanding attention to underlying grievances."
+      },
+      {
+        "topic": "STATE RESPONSE TO UNREST",
+        "linked_themes": [
+          "PROTEST MANAGEMENT & SECURITY",
+          "INTER-AGENCY INCIDENTS"
+        ],
+        "rationale": "These themes cover the government's actions and internal challenges in controlling public demonstrations.",
+        "interpret": "Government efforts to manage protests involve security measures, but internal agency issues can complicate effective and coordinated responses."
+      },
+      {
+        "topic": "ANTI-CORRUPTION EFFORTS",
+        "linked_themes": [
+          "ANTI-CORRUPTION EFFORTS"
+        ],
+        "rationale": "This theme stands alone, focusing on initiatives to combat corruption within the system.",
+        "interpret": "Efforts to combat corruption are crucial for good governance and may often be a root cause or a separate issue alongside public unrest."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-26",
+    "thm": [
+      "CIVIL DISORDER & RESPONSE",
+      "INTERNATIONAL RELATIONS & CONFLICTS",
+      "MEDIA & SOCIAL ISSUES",
+      "PROTECTION OF MINORS & YOUTH"
+    ],
+    "topics": [
+      {
+        "topic": "CIVIL DISORDER & RESPONSE",
+        "linked_themes": [
+          "CIVIL DISORDER & RESPONSE"
+        ],
+        "rationale": "This theme focuses on internal societal unrest and the government's actions to address it.",
+        "interpret": "Internal civil disturbances require a coordinated state response to restore order and address underlying causes."
+      },
+      {
+        "topic": "INTERNATIONAL RELATIONS & CONFLICTS",
+        "linked_themes": [
+          "INTERNATIONAL RELATIONS & CONFLICTS"
+        ],
+        "rationale": "This theme stands alone, focusing on external diplomatic and conflict-related matters.",
+        "interpret": "Global interactions and conflicts significantly shape a nation's foreign policy and international standing."
+      },
+      {
+        "topic": "MEDIA & SOCIAL ISSUES",
+        "linked_themes": [
+          "MEDIA & SOCIAL ISSUES"
+        ],
+        "rationale": "This theme stands alone, covering the role of media in highlighting broader societal concerns.",
+        "interpret": "Media plays a crucial role in shaping public discourse and awareness regarding various social challenges."
+      },
+      {
+        "topic": "YOUTH PROTECTION & WELFARE",
+        "linked_themes": [
+          "PROTECTION OF MINORS & YOUTH"
+        ],
+        "rationale": "This theme stands alone, focusing on the specific welfare and safety of younger populations.",
+        "interpret": "Ensuring the safety and well-being of minors and youth is a critical societal responsibility and policy concern."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-27",
+    "thm": [
+      "PUBLIC PROTESTS & UNREST",
+      "DIGITAL INFORMATION & REGULATION",
+      "LAW ENFORCEMENT & GOVERNANCE",
+      "GENERAL NEWS & INTERNATIONAL AFFAIRS"
+    ],
+    "topics": [
+      {
+        "topic": "PUBLIC UNREST & STATE RESPONSE",
+        "linked_themes": [
+          "PUBLIC PROTESTS & UNREST",
+          "LAW ENFORCEMENT & GOVERNANCE"
+        ],
+        "rationale": "These themes connect public demonstrations with the state's role in maintaining order and governance.",
+        "interpret": "Public unrest often necessitates a strong response from law enforcement and governance structures to restore stability and address grievances."
+      },
+      {
+        "topic": "DIGITAL GOVERNANCE & REGULATION",
+        "linked_themes": [
+          "DIGITAL INFORMATION & REGULATION"
+        ],
+        "rationale": "This theme stands alone, focusing on the control and management of digital information.",
+        "interpret": "The regulation of digital information is increasingly vital for managing public discourse and ensuring online safety."
+      },
+      {
+        "topic": "GENERAL NEWS & INTERNATIONAL AFFAIRS",
+        "linked_themes": [
+          "GENERAL NEWS & INTERNATIONAL AFFAIRS"
+        ],
+        "rationale": "This theme stands alone, encompassing broad global events and general news coverage.",
+        "interpret": "International affairs and general news provide context for national events and reflect global interconnectedness."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-28",
+    "thm": [
+      "PROTEST CAUSES & EXPRESSION",
+      "PROTEST MANAGEMENT & CONTROL",
+      "PROTEST IMPACT & ACCOUNTABILITY"
+    ],
+    "topics": [
+      {
+        "topic": "PROTEST DYNAMICS & ACCOUNTABILITY",
+        "linked_themes": [
+          "PROTEST CAUSES & EXPRESSION",
+          "PROTEST IMPACT & ACCOUNTABILITY"
+        ],
+        "rationale": "These themes cover the origins, manifestations, and consequences of public protests, including demands for responsibility.",
+        "interpret": "Understanding the root causes and expressions of protests, along with their societal impact, is crucial for addressing demands for accountability."
+      },
+      {
+        "topic": "PROTEST MANAGEMENT & CONTROL",
+        "linked_themes": [
+          "PROTEST MANAGEMENT & CONTROL"
+        ],
+        "rationale": "This theme stands alone, focusing on the strategies and actions taken by authorities to handle protests.",
+        "interpret": "Effective management and control strategies are essential for authorities to mitigate the risks and maintain order during public demonstrations."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-29",
+    "thm": [
+      "AFTERMATH & RECOVERY",
+      "OFFICIAL RESPONSE & ENGAGEMENT",
+      "POLICE ACCOUNTABILITY",
+      "PUBLIC DEMONSTRATIONS",
+      "PROTEST VIOLENCE & DESTRUCTION",
+      "PUBLIC OUTCRY & DEMANDS",
+      "URBAN & WIDESPREAD UNREST",
+      "HUMAN RIGHTS CONCERNS",
+      "PROTEST CONFRONTATIONS",
+      "DEMANDS FOR JUSTICE & ACCOUNTABILITY",
+      "PUBLIC UNREST & GRIEVANCES",
+      "POLICE REFORM & CRITIQUE",
+      "PROTEST MANAGEMENT & MILITARY ROLE",
+      "SOCIAL & URBAN DISRUPTION",
+      "OFFICIAL SUPPORT & AID",
+      "PRESIDENTIAL ACTIONS & DIRECTIVES",
+      "NATIONAL STABILITY & PEACE",
+      "LEGISLATIVE & GOVERNMENT INTERVENTION",
+      "SYSTEMIC CRITIQUE & REFORM",
+      "NATIONAL & GLOBAL OVERVIEW",
+      "APPEALS FOR CALM, UNITY & TRUST",
+      "REGIONAL UNREST & VIOLENCE",
+      "STUDENT ACTIVISM",
+      "CHILD WELFARE & SAFETY",
+      "POLICE MISCONDUCT & DISCIPLINE",
+      "POLICE TRANSPARENCY",
+      "PROPERTY DESTRUCTION & ARSON",
+      "SOCIO-ECONOMIC GRIEVANCES"
+    ],
+    "topics": [
+      {
+        "topic": "PUBLIC UNREST & GRIEVANCES",
+        "linked_themes": [
+          "PUBLIC DEMONSTRATIONS",
+          "PROTEST VIOLENCE & DESTRUCTION",
+          "URBAN & WIDESPREAD UNREST",
+          "PROTEST CONFRONTATIONS",
+          "PUBLIC UNREST & GRIEVANCES",
+          "REGIONAL UNREST & VIOLENCE",
+          "STUDENT ACTIVISM",
+          "PROPERTY DESTRUCTION & ARSON",
+          "SOCIO-ECONOMIC GRIEVANCES",
+          "PUBLIC OUTCRY & DEMANDS",
+          "HUMAN RIGHTS CONCERNS",
+          "DEMANDS FOR JUSTICE & ACCOUNTABILITY",
+          "SOCIAL & URBAN DISRUPTION",
+          "SYSTEMIC CRITIQUE & REFORM"
+        ],
+        "rationale": "These themes collectively describe the various forms, causes, and immediate impacts of widespread public dissent and demands for change.",
+        "interpret": "Extensive public demonstrations, fueled by socio-economic grievances and calls for justice, often escalate into violence and widespread urban disruption, highlighting systemic issues."
+      },
+      {
+        "topic": "GOVERNMENT RESPONSE & STABILITY",
+        "linked_themes": [
+          "OFFICIAL RESPONSE & ENGAGEMENT",
+          "PROTEST MANAGEMENT & MILITARY ROLE",
+          "OFFICIAL SUPPORT & AID",
+          "PRESIDENTIAL ACTIONS & DIRECTIVES",
+          "LEGISLATIVE & GOVERNMENT INTERVENTION",
+          "APPEALS FOR CALM, UNITY & TRUST",
+          "AFTERMATH & RECOVERY",
+          "NATIONAL STABILITY & PEACE"
+        ],
+        "rationale": "These themes cover the full spectrum of official actions, interventions, and efforts to restore order and stability following unrest.",
+        "interpret": "Government bodies, including the military, engage in various interventions, aid, and appeals to manage unrest, restore calm, and ensure national stability and recovery."
+      },
+      {
+        "topic": "POLICE ACCOUNTABILITY & REFORM",
+        "linked_themes": [
+          "POLICE ACCOUNTABILITY",
+          "POLICE REFORM & CRITIQUE",
+          "POLICE MISCONDUCT & DISCIPLINE",
+          "POLICE TRANSPARENCY"
+        ],
+        "rationale": "These themes specifically address issues related to law enforcement conduct, oversight, and calls for systemic changes.",
+        "interpret": "Public scrutiny and demands for police accountability, transparency, and reform are prominent, addressing concerns about misconduct and discipline."
+      },
+      {
+        "topic": "BROADER CONTEXT & WELFARE",
+        "linked_themes": [
+          "NATIONAL & GLOBAL OVERVIEW",
+          "CHILD WELFARE & SAFETY"
+        ],
+        "rationale": "These themes provide a wider perspective on the events, including their global context and specific social impacts.",
+        "interpret": "Events are viewed within a national and global context, with particular attention to vulnerable populations like children, highlighting broader societal concerns."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-30",
+    "thm": [
+      "GOVERNMENT RESPONSE TO UNREST",
+      "IMPACT AND RECOVERY",
+      "PROTEST VIOLENCE AND DESTRUCTION",
+      "PROTEST CAUSES AND DEMANDS",
+      "SOCIETAL AND INFORMATION RESPONSE"
+    ],
+    "topics": [
+      {
+        "topic": "PROTEST DYNAMICS & DEMANDS",
+        "linked_themes": [
+          "PROTEST VIOLENCE AND DESTRUCTION",
+          "PROTEST CAUSES AND DEMANDS"
+        ],
+        "rationale": "These themes describe the origins, manifestations, and destructive aspects of public demonstrations.",
+        "interpret": "Protests are driven by specific causes and demands, often escalating into violence and destruction, reflecting deep societal grievances."
+      },
+      {
+        "topic": "RESPONSE & RECOVERY",
+        "linked_themes": [
+          "GOVERNMENT RESPONSE TO UNREST",
+          "IMPACT AND RECOVERY",
+          "SOCIETAL AND INFORMATION RESPONSE"
+        ],
+        "rationale": "These themes cover the official and societal reactions to unrest, including its aftermath and efforts to recover.",
+        "interpret": "Both government and society respond to unrest, dealing with its immediate impact, managing information, and initiating recovery efforts."
+      }
+    ]
+  },
+  {
+    "date": "2025-08-31",
+    "thm": [
+      "PROTEST VIOLENCE",
+      "PUBLIC EXPRESSION & ADVOCACY",
+      "GOVERNMENT RESPONSE TO UNREST",
+      "POST-UNREST RECOVERY",
+      "SECURITY MEASURES",
+      "COMMUNITY ACTION & RESPONSE",
+      "ECONOMIC IMPACT & STABILITY",
+      "PUBLIC & CIVILIAN IMPACT",
+      "MEDIA & EXTERNAL PERCEPTION",
+      "GOVERNANCE & STRATEGY",
+      "POST-UNREST INCIDENTS & REPORTS",
+      "GOVERNMENT CLARIFICATION",
+      "LAW ENFORCEMENT ACTIONS & POLICY"
+    ],
+    "topics": [
+      {
+        "topic": "PUBLIC UNREST & EXPRESSION",
+        "linked_themes": [
+          "PROTEST VIOLENCE",
+          "PUBLIC EXPRESSION & ADVOCACY"
+        ],
+        "rationale": "These themes describe the forms of public dissent, from peaceful advocacy to violent demonstrations.",
+        "interpret": "Public expression, including advocacy and protests, can escalate to violence, reflecting the intensity of societal grievances."
+      },
+      {
+        "topic": "GOVERNMENT RESPONSE & GOVERNANCE",
+        "linked_themes": [
+          "GOVERNMENT RESPONSE TO UNREST",
+          "SECURITY MEASURES",
+          "GOVERNANCE & STRATEGY",
+          "GOVERNMENT CLARIFICATION",
+          "LAW ENFORCEMENT ACTIONS & POLICY"
+        ],
+        "rationale": "These themes encompass the full range of official actions, policies, and communication strategies in response to public unrest.",
+        "interpret": "Governments employ various strategies, security measures, and clarifications, alongside law enforcement actions, to manage and respond to public unrest."
+      },
+      {
+        "topic": "SOCIETAL IMPACT & RECOVERY",
+        "linked_themes": [
+          "POST-UNREST RECOVERY",
+          "ECONOMIC IMPACT & STABILITY",
+          "PUBLIC & CIVILIAN IMPACT",
+          "POST-UNREST INCIDENTS & REPORTS",
+          "COMMUNITY ACTION & RESPONSE",
+          "MEDIA & EXTERNAL PERCEPTION"
+        ],
+        "rationale": "These themes cover the broad consequences of unrest on society, the economy, and the subsequent recovery efforts, including community and media reactions.",
+        "interpret": "Unrest has significant economic and civilian impacts, leading to recovery efforts, community responses, and shaping media and external perceptions."
+      }
+    ]
+  }
+]
